@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rowitem"
+    app:layout_constraintHorizontal_chainStyle="packed">
+
+    <TextView
+        android:id="@+id/indexOfContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameOfContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aditya Kumar"
+        android:padding="10dp"
+        android:maxEms="10"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        app:layout_constraintStart_toEndOf="@+id/indexOfContact"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailOfContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AdityaKumar@gmail.com"
+        android:padding="10dp"
+        android:maxEms="10"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        app:layout_constraintStart_toEndOf="@+id/nameOfContact"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/numberOfContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9922277723212"
+        android:padding="10dp"
+        android:maxEms="10"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        app:layout_constraintStart_toEndOf="@+id/emailOfContact"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/deleteContact"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="10dp"
+        android:background="@drawable/deleteicon"
+        app:layout_constraintStart_toEndOf="@+id/numberOfContact"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

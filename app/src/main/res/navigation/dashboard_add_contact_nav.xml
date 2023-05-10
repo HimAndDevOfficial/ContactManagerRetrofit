@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/addContactFragment"
+    >
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.example.contactmanagerretrofit.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" />
+</navigation>

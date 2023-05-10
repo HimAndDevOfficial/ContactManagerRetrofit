@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_registration"
+    android:id="@+id/my_nav">
+
+    <fragment
+        android:id="@+id/fragment_registration"
+        android:name="com.example.contactmanagerretrofit.ui.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration"
+        >
+    </fragment>
+
+
+</navigation>

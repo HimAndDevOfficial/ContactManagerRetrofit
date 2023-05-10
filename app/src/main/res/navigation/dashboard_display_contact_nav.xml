@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/displayContactFragment"
+    >
+    <fragment
+        android:id="@+id/displayContactFragment"
+        android:name="com.example.contactmanagerretrofit.DisplayContactFragment"
+        android:label="fragment_display_contact"
+        tools:layout="@layout/fragment_display_contact" >
+        <action
+            android:id="@+id/action_displayContactFragment_to_updateContactFragment"
+            app:destination="@id/updateContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateContactFragment"
+        android:name="com.example.contactmanagerretrofit.UpdateContactFragment"
+        android:label="fragment_update_contact"
+        tools:layout="@layout/fragment_update_contact" >
+        <argument
+            android:name="currentContactRecord"
+            app:argType="com.example.contactmanagerretrofit.model.AllContactResponseItem" />
+    </fragment>
+</navigation>
